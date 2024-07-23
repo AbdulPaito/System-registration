@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.one {
+    border: 1px solid black; /* Adds a solid border with a light gray color */
+    color: blue;
+    padding: 100px; /* Adds padding inside the container */
+    height: -10px; /* Sets height automatically based on content, or specify a value */
+    width: 100%; /* Sets the width to 100% of the containing element */
+    text-align: center; /* Centers the text and any inline elements like images */
+    font-weight: bold;
+    font-size: 50;
+  
+ 
+
+}
+.br{
+  color: blue;
+  font-size: 50;
+}
+.one img {
+    max-width: 140px; /* Ensures the image doesn't exceed the width of its container */
+    height: 60px; /* Maintains the aspect ratio */
+}
+.italic-text {
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+.r th{
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1px;
+  font-size: 50px;
+
+
+
+}
+.lerner-indent {
+    color: blue;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    text-indent: -20px; /* Adjust as needed */
+    font-weight: bold;
+    border-collapse: collapse;
+    width: 100%;
+    position: relative; /* Relative positioning to contain the absolute child */
+}
+
+
+.lerner-indent th {
+    border: 1px solid black;
+    padding:70px;
+}
+.lerner-indent h3 {
+    margin: 0; /* Removes default margin */
+    padding-left: 120px; /* Adjust padding to provide space for the image box */
+}
+
+.image-box {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 170px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 0; /* Optional: adds rounded corners */
+    position: absolute; /* Position the image box absolutely */
+    top: 20px; /* Adjust as needed for vertical position */
+    right: 100px; /* Adjust as needed for horizontal position */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.image-box img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    max-height: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+    width: auto; /* Maintains the aspect ratio */
+}
+
+
+
+
+</style>
+</head>
+<body>
+<table class="one">
+  <tr>
+    <td> <img src="TESDA-Logo.png" alt="Logo" class="logo"></td>
+    <td>Technical Education and Skills Development Authority<br class="br">Pangasiwaan sa Edukasyong Teknikal at Pagpapaunlad ng Kasanayan</td>
+    <td><p class="italic-text">MIS 03 - 01<br>(ver.2018)</p></td>
+  </tr>
+</table>
+<table class="r">
+  <tr>
+      <th>Registration Form</th>
+  </tr>
+</table>
+<table class="lerner-indent">
+  <tr>
+    <th colspan="2" class="learner-indent">
+    
+      <div class="image-box">
+        <img src="TESDA-Logo.png" alt="Profile Image">
+      </div>
+      <h3>LEARNERS PROFILE FORM</h3>
+    </th>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>1. T2MIS Auto Generated</th>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>1.1. Unique Learner Identifier (ULI) Number:</th>
+    <td><input type="text" name="uli_number" id="uli_number"></td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>1.2. Entry Date:</th>
+    <td><input type="date" name="entry_date" id="entry_date"></td>
+  </tr>
+  <tr>
+    <th>2. Learner/Manpower Profile</th>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>2.1. Name:</th>
+    <td><input type="text" name="last_name" id="last_name">, <input type="text" name="extension_name" id="extension_name"> (Jr., Sr.)</td>
+    <td><input type="text" name="first_name" id="first_name"></td>
+    <td><input type="text" name="middle_name" id="middle_name"></td>
+  </tr>
+  <tr>
+    <th>2.2. Complete Permanent Mailing Address:</th>
+    <td><input type="text" name="number_street" id="number_street"></td>
+    <td><input type="text" name="barangay" id="barangay"></td>
+    <td><input type="text" name="district" id="district"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" name="city_municipality" id="city_municipality"></td>
+    <td><input type="text" name="province" id="province"></td>
+    <td><input type="text" name="region" id="region"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" name="email_address" id="email_address"></td>
+    <td><input type="text" name="contact_no" id="contact_no"></td>
+    <td><input type="text" name="nationality" id="nationality"></td>
+  </tr>
+  <tr>
+    <th>3. Personal Information</th>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>3.1. Sex</th>
+    <td><input type="radio" name="sex" id="male" value="male"> <label for="male">Male</label><br>
+    <input type="radio" name="sex" id="female" value="female"> <label for="female">Female</label></td>
+    <th>3.2. Civil Status</th>
+    <td><input type="radio" name="civil_status" id="single" value="single"> <label for="single">Single</label><br>
+    <input type="radio" name="civil_status" id="married" value="married"> <label for="married">Married</label><br>
+    <input type="radio" name="civil_status" id="widower" value="widower"> <label for="widower">Widow/er</label><br>
+    <input type="radio" name="civil_status" id="separated" value="separated"> <label for="separated">Separated</label><br>
+    <input type="radio" name="civil_status" id="solo_parent" value="solo_parent"> <label for="solo_parent">Solo Parent</label></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <th>3.3 Employment Status (before the training)</th>
+    <td><input type="radio" name="employment_status" id="employed" value="employed"> <label for="employed">Employed</label><br>
+    <input type="radio" name="employment_status" id="unemployed" value="unemployed"> <label for="unemployed">Unemployed</label></td>
+  </tr>
+  <tr>
+    <th>3.4 Birthdate</th>
+    <td><input type="month" name="month_of_birth" id="month_of_birth"></td>
+    <td><input type="number" name="day_of_birth" id="day_of_birth"></td>
+    <td><input type="number" name="year_of_birth" id="year_of_birth"></td>
+    <td><input type="number" name="age" id="age"></td>
+  </tr>
+  <tr>
+    <th>3.5 Birthplace</th>
+    <td><input type="text" name="city_municipality" id="city_municipality"></td>
+    <td><input type="text" name="province" id="province"></td>
+    <td><input type="text" name="region" id="region"></td>
+  </tr>
+  <tr>
+    <th>3.6 Educational Attainment Before the Training (Trainee)</th>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="educational_attainment" id="no_grade_completed" value="no_grade_completed"> <label for="no_grade_completed">No Grade Completed</label><br>
+    <input type="checkbox" name="educational_attainment" id="elementary_undergraduate" value="elementary_undergraduate"> <label for="elementary_undergraduate">Elementary Undergraduate</label><br>
+    <input type="checkbox" name="educational_attainment" id="elementary_graduate" value="elementary_graduate"> <label for="elementary_graduate">Elementary Graduate</label></td>
+    <td><input type="checkbox" name="educational_attainment" id="pre_school" value="pre_school"> <label for="pre_school">Pre-School (Nursery/Kinder/Prep)</label><br>
+    <input type="checkbox" name="educational_attainment" id="post_secondary_undergraduate" value="post_secondary_undergraduate"> <label for="post_secondary_undergraduate">Post Secondary Undergraduate</label><br>
+    <input type="checkbox" name="educational_attainment" id="post_secondary_graduate" value="post_secondary_graduate"> <label for="post_secondary_graduate">Post Secondary Graduate</label></td>
+    <td><input type="checkbox" name="educational_attainment" id="high_school_undergraduate" value="high_school_undergraduate"> <label for="high_school_undergraduate">High School Undergraduate</label><br>
+    <input type="checkbox" name="educational_attainment" id="college_undergraduate" value="college_undergraduate"> <label for="college_undergraduate">College Undergraduate</label><br>
+    <input type="checkbox" name="educational_attainment" id="junior_high_graduate" value="junior_high_graduate"> <label for="junior_high_graduate">Junior High Graduate</label></td>
+    <td><input type="checkbox" name="educational_attainment" id="high_school_graduate" value="high_school_graduate"> <label for="high_school_graduate">High School Graduate</label><br>
+    <input type="checkbox" name="educational_attainment" id="college_graduate" value="college_graduate"> <label for="college_graduate">College Graduate or Higher</label><br>
+    <input type="checkbox" name="educational_attainment" id="senior_high_graduate" value="senior_high_graduate"> <label for="senior_high_graduate">Senior High Graduate</label></td>
+  </tr>
+  <tr>
+    <th>3.7 Parent/Guardian</th>
+    <td><input type="text" name="parent_guardian_name" id="parent_guardian_name"></td>
+    <td></td>
+    <td><input type="text" name="permanent_mailing_address" id="permanent_mailing_address"></td>
+  </tr>
+</table>
+
+</body>
+</html>
