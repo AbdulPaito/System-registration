@@ -7,6 +7,12 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+/* Add this to your existing CSS */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+}
 
 td, th {
   border: 1px solid #000000;
@@ -25,6 +31,7 @@ tr:nth-child(even) {
     text-align: center; /* Centers the text and any inline elements like images */
     font-weight: bold;
     font-size: 50;
+    
   
  
 
@@ -47,6 +54,7 @@ tr:nth-child(even) {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 1px;
   font-size: 50px;
+  
 
 
 
@@ -93,7 +101,67 @@ tr:nth-child(even) {
     height: auto; /* Maintains the aspect ratio */
     width: auto; /* Maintains the aspect ratio */
 }
+    /* New row specific styling */
+    .generated th{ 
+        font-size: 20px; /* Smaller font size */
+        padding: 5px; /* Smaller padding */
+        height: 20px; /* Set height for the row */
+        background-color: #f0f0f0; /* Optional background color */
+        padding-left: 20px; /* Adjust the text position horizontally */
+        text-align: left; /* Align text to the left if needed */
+        color: blue;
+        border-color: #000000;
+        
+        
+     
 
+        
+
+    }
+    .uli {
+  background-color: #ffffff; /* Background color for the row */
+  font-size:15px; /* Font size for text in the row */
+  height: 20px; /* Desired height for the row */
+  text-align: center;
+  position: relative; /* Establishes a containing block for absolutely positioned elements */
+}
+.date input[type="text"] {
+  text-align: center; /* Centers the text inside the input field */
+  width: 50%; /* Ensures the input field takes up the full width of its container */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  height: 30px;
+  margin-bottom: 33px;
+}
+
+    .uli td, .uli th {
+  border: 1px solid #000000; /* Change to desired border color */
+}
+.left-align {
+  text-align: left; /* Ensure text is aligned to the left */
+}
+    .small-box {
+      width: 30px; /* Width of each small box */
+      height: 35px; /* Height of each small box */
+      background-color: #ffffff; /* Background color of each box */
+      border: 0.5px solid #000000; /* Change to desired border color */
+      display: flex; /* Use flexbox to center text */
+      justify-content: center; /* Center text horizontally */
+      align-items: center; /* Center text vertically */
+      font-size: 12px; /* Font size for the text inside the box */
+      margin-bottom: 29px; /* Adjust this value to move the box to the right */
+
+      
+    }
+/* Container for the small boxes */
+.box-container {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: nowrap; /* Prevents wrapping of items */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  align-items: center; /* Aligns items vertically center */
+  height: 5px;
+  padding-left: 250px;
+
+}
 
 
 
@@ -122,29 +190,57 @@ tr:nth-child(even) {
       <h3>LEARNERS PROFILE FORM</h3>
     </th>
   </tr>
+  </table>
+
+ <table>
+    <!-- Added Row Here -->
+    <tr class="generated">
+      <th>1. T2MIS Auto Generated</th>
+  </tr>
+</table>
+
+<table class="uli">
+  <tr >
+    <th class="left-align">1.1. Unique Learner Identifier<br>(ULI) Number: 
+
+      <div class="box-container">
+
+      <div class="small-box">1</div>
+      <div class="small-box">2</div>
+      <div class="small-box">3</div>
+      <div class="small-box">4</div>
+      <div class="small-box">5</div>
+      <div class="small-box">6</div>
+      <div class="small-box">7</div>
+      <div class="small-box">8</div>
+      <div class="small-box">9</div>
+      <div class="small-box">10</div>
+      <div class="small-box">11</div>
+      <div class="small-box">12</div>
+      <div class="small-box">13</div>
+      <div class="small-box">14</div>
+      <div class="date">
+        1.2 Entry Date: <input type="text" placeholder="mm/dd/yy" name="entry_date" id="entry_date">
+      </div>
+    </th>
+  </tr>
 </table>
 <table>
-  <tr>
-    <th>1. T2MIS Auto Generated</th>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>1.1. Unique Learner Identifier (ULI) Number:</th>
-    <td><input type="text" name="uli_number" id="uli_number"></td>
-    <td>-</td>
-    <td></td>
-  </tr>
+
+
+
+
   <tr>
     <th>1.2. Entry Date:</th>
-    <td><input type="date" name="entry_date" id="entry_date"></td>
+
   </tr>
   <tr>
     <th>2. Learner/Manpower Profile</th>
     <td></td>
     <td></td>
     <td></td>
+    <td><input type="date" name="entry_date" id="entry_date"></td>
+    
   </tr>
   <tr>
     <th>2.1. Name:</th>
